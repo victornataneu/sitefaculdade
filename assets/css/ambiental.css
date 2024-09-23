@@ -925,7 +925,304 @@
 }
 
 
-@media(max-width:260px){
+
+@media (min-width: 300) and (max-width: 350px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        font-size: 1.8rem;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .text-one-app .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        padding: 0.5rem;
+        
+
+
+        
+    }
+    
+    .text-one-app .obs0{
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        
+        
+        
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .text-one-app h2{
+        margin: 0;
+    }
+
+    .text-one-app{
+        min-width: 100%;
+    }
+
+
+    .text-one-app .app-h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+
+}
+
+
+
+
+@media(max-width:599px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .text-one-app .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        padding: 0.5rem;
+        
+
+
+        
+    }
+    
+    .text-one-app .obs0{
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        
+        
+        
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .text-one-app h2{
+        margin: 0;
+    }
+
+    .text-one-app{
+        min-width: 100%;
+    }
+
+
+    .text-one-app .app-h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+
+
+    
+}
+
+
+
+@media(max-width:280px){
 
     *{
         margin: 0;
