@@ -106,6 +106,7 @@
     border: 0.2rem solid black;
     flex-direction: row;
     min-height: 100vh;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.2);
     
 
 }
@@ -164,6 +165,21 @@
 
 }
 
+
+.text-content2 .textdoh3trabalho{
+    font-size: 1.4rem;
+
+}
+
+
+.text-content2 .textdoh3resultado{
+    font-size: 1.4rem;
+}
+
+
+
+
+
 .text-content2 h2{
     display: flex;
     font-size: 2.9rem;
@@ -217,6 +233,7 @@
     font-size: 1.4rem;
     text-align: justify;
 }
+
 
 
 .textdoh3 strong b{
@@ -507,6 +524,21 @@
         font-size: 1.3rem;
     }
 
+    .text-content2 .textdoh3trabalho{
+        font-size: 1.1rem;
+    
+    }
+    
+    
+    .text-content2 .textdoh3resultado{
+        font-size: 1.1rem;
+    }
+
+    .text-content2 .textdoh3finais{
+        font-size: 1.1rem;
+    }
+    
+
     
 }
 
@@ -571,14 +603,17 @@
 
 
 .text-one{
-    background-image: url("/assets/img/DALL·E\ 2024-09-20\ 19.21.36\ -\ A\ vibrant\ background\ image\ representing\ sustainability.\ The\ scene\ features\ a\ clean\,\ bright\ environment\ with\ elements\ like\ a\ lush\ green\ landscape\,\ a\ cl.webp");
+    background-image: url("/assets/img/DALL·E\ 2024-09-23\ 19.08.37\ -\ A\ clean\ and\ bright\ environmental-themed\ background\ image\ featuring\ elements\ of\ nature\ and\ sustainability.\ The\ scene\ includes\ a\ landscape\ with\ lush\ gre.webp");
     font-size: 1.4rem;
     margin-top: 0.5rem;
     text-align: justify;
     padding: 2rem;
     background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 1rem;
+    object-fit: cover;
+    
+    
     
 }
 
@@ -599,14 +634,15 @@
 
 
 .text-two{
-    background-image: url("/assets/img/DALL·E\ 2024-09-20\ 19.21.36\ -\ A\ vibrant\ background\ image\ representing\ sustainability.\ The\ scene\ features\ a\ clean\,\ bright\ environment\ with\ elements\ like\ a\ lush\ green\ landscape\,\ a\ cl.webp");
+    background-image: url("/assets/img/DALL·E\ 2024-09-23\ 19.08.37\ -\ A\ clean\ and\ bright\ environmental-themed\ background\ image\ featuring\ elements\ of\ nature\ and\ sustainability.\ The\ scene\ includes\ a\ landscape\ with\ lush\ gre.webp");
     font-size: 1.4rem;
     margin-top: 0.5rem;
     text-align: justify;
     padding: 2rem;
     background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 1rem;
+    object-fit: cover;
 
 }
 
@@ -707,30 +743,83 @@
 
 
 
+.contentp{
+    padding: 2rem;
+    margin-top: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+
 
 
 @media(max-width:600px){
 
     .img-app img{
         margin-top: 3rem;
-        width: 40%;
+        width: 33%;
         height: auto;
     
         
     }
 
+    .section-page-app h1{
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        max-width: 70%;
+
+    }
+
+
+    .img-app{
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     .text-one-app h2{
         font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .text-one-app img{
+        position: relative;
+        bottom: 3.5rem;
         margin-top: 1rem;
-        
+
+    }
+
+    .text-one-app{
+        width: 70%;
+        height: auto;
     
     }
 
     .section-page-app button{
-        margin-left: 12rem;
+        margin-left: 4rem;
+
+    }
+
+    .obs{
+        text-align: justify;
+        padding: 2rem;
 
     }
     
+    .text-one-app .img-erro{
+        display: flex;
+        position: relative;
+        top: 0.2rem;
+        justify-content: center;
+        right: 0rem;
+        align-items: center;
+    }
     
 }
 
@@ -741,13 +830,18 @@
 
     .img-app{
         display: flex;
-        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-app img{
-        margin-top: 3rem;
-        width: 60%;
+        margin-top: 2rem;
+        width: 55%;
         height: auto;
+        display: flex;
+        margin-right: 6rem;
+        
         
         
     }
@@ -755,6 +849,7 @@
     .text-one-app h2{
         font-size: 1.3rem;
         margin-top: 1rem;
+        margin-left: 3rem;
         
     
     }
@@ -765,8 +860,7 @@
         margin-bottom: 2rem;
         color: red;
         display: flex;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 4rem;
 
         
     }
@@ -795,21 +889,164 @@
         margin-top: 1rem;
     }
 
-    .contentp{
-        margin-right: 1rem;
+
+    .section-page-app{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        
+        
+    }
+
+    .section-page-app h1{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     
+    .contentp{
+        text-align: justify;
+        margin-left: 2rem;
+    }
+
+    .img-erro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        position: relative;
+        left: 4rem;
+    }
+    
+
     
 }
 
 
 @media(max-width:300px){
-    .section-page-app button{
-        margin-left: 4rem;
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        display: flex;
+
+
+        
     }
     
+    .obs0{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
 
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        margin-right: 1rem;
+
+    }
+
+    
 }
 
 
@@ -817,12 +1054,7 @@
 
 
 
-.contentp{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    font-size: 1.4rem;
-}
+
 
 .obs{
     font-size: 1.5rem;
@@ -924,6 +1156,7 @@
 
 
 @media (max-width: 300px) {
+
     .section-page-co2 h2 {
         font-size: 1rem;
         margin-top: 2rem;
@@ -935,17 +1168,12 @@
     }
 
 
-    .section-page-co2 h1 {
-        margin-top: 1rem;
+    .section-page-co2 .sh1{
+        font-size: 2rem;
         margin-bottom: 2rem;
         justify-content: center;
         align-items: center;
-        text-align: center; /* Opcional: centraliza o texto, caso necessário */
-
-    }
-
-    .section-page-co2 .sh1{
-        font-size: 2rem;
+        height: 7rem;
     }
 
 
@@ -1039,7 +1267,7 @@
     }
 
     .section-ods .ssh1{
-        font-size: 2rem;
+        font-size: 1.6rem;
 
     }
 }
