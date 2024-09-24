@@ -1364,10 +1364,19 @@
         margin-bottom: 0.5rem;
     }
 
+    .text-ods .ssh1{
+        font-size: 1rem;
+    }
+
+    .section-ods .ssh1{
+        font-size: 1rem;
+
+    }
+}
+
 
 
     
-}
 
 
 .obs{
@@ -1476,7 +1485,10 @@
         position: relative;
         right: 1.5rem;
     }
+
+   
 }
+
 
 
 
@@ -1510,6 +1522,15 @@
     .section-page-co2 h2 img{
         position: relative;
         right: 1.5rem;
+    }
+
+    .text-ods .ssh1{
+        font-size: 1rem;
+    }
+
+    .section-ods .ssh1{
+        font-size: 1rem;
+
     }
 }
 
@@ -1587,19 +1608,6 @@
 
 
 
-
-
-
-@media(max-width:300px){
-    .text-ods .ssh1{
-        font-size: 1rem;
-    }
-
-    .section-ods .ssh1{
-        font-size: 1rem;
-
-    }
-}
 
 
 
