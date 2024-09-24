@@ -1,0 +1,1668 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.section-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" ;
+    height: 100vh;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 6rem; /* Fixar a altura da navbar */
+    align-items: center;
+    
+    
+    
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 15rem;
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 6rem;
+    
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Para organizar o conteúdo de forma vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.main-content h1{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Transição suave ao interagir */
+    animation: moveImage 2s backwards ease-in-out; /* Aplica a animação continuamente */
+}
+
+
+
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(-200%); /* Inicia no ponto original */
+    }
+    50% {
+        transform: translateX(10%); /* Move a imagem 30 pixels para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Retorna ao ponto original */
+    }
+}
+
+
+.text-content{
+    background-size: cover;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    flex-direction: row;
+    min-height: 100vh;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+.text-content h2{
+    display: flex;
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    justify-content: center;
+    background-color: aqua;
+
+    
+    
+}
+
+
+.text-quem-somos{
+    display: flex;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+
+    
+}
+
+
+.text-conheca-projeto{
+    display: flex;
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+
+}
+
+
+.papel-projeto{
+    display: flex;
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.text-content2{
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    flex-direction: row;
+    min-height: 100vh;
+    
+
+}
+
+
+.text-content2 .textdoh3trabalho{
+    font-size: 1.4rem;
+
+}
+
+
+.text-content2 .textdoh3resultado{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+.text-content2 h2{
+    display: flex;
+    font-size: 2.9rem;
+    margin-top: 1rem;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Transição suave ao interagir */
+    animation: moveImage 2s backwards ease-in-out; /* Aplica a animação continuamente */
+    
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(-200%); /* Inicia no ponto original */
+    }
+    50% {
+        transform: translateX(10%); /* Move a imagem 30 pixels para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Retorna ao ponto original */
+    }
+}
+
+
+
+
+
+
+
+.text-content2 h2 img{
+    flex-direction: row;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.especificacao h3{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+}
+
+
+.especificacao h3 img{
+    position: relative;
+    top: 1rem;
+}
+
+
+
+.textdoh3{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+
+
+.textdoh3 strong b{
+    color: black;
+    margin-right: 0.5rem;
+    position: relative;
+    left: 5rem;
+}
+
+.textdoh3 strong img{
+    position: relative;
+    left: 5rem;
+}
+
+
+.textdoh3 strong{
+    color: blueviolet;
+    font-size: 1.2rem;
+}
+
+
+.trabalhocampo{
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+
+.img-feitas{
+    display: flex;
+    gap: 1rem;
+    
+    
+}
+
+.img-feitas img {
+    display: flex;
+    position: relative;
+    margin-top: 2rem;
+    background-size: cover;
+    width: 50%; /* Ajusta a imagem para ocupar 100% da largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+
+   
+}
+
+.p1{
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pcontent {
+    margin-top: 1rem;
+}
+
+
+.pcontenttext{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.consideracoes{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 450px){
+    
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 1rem;
+    }
+
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: rgb(70, 188, 209);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 14rem; /* Fixar a altura da navbar */
+        
+    }
+
+    .main{
+        margin-top: 11.5rem;
+    }
+
+    .nav {
+        display: none; /* Esta regra sobrescreve a anterior, escondendo o menu (nav) por padrão */
+        
+    }
+
+
+    .close-menu {
+        position: fixed; /* Fixa o elemento na tela, mantendo sua posição ao rolar a página */
+        z-index: 2; /* Garante que este elemento fique acima de outros */
+        top: 0; /* Posiciona o elemento no topo da página */
+        left: 0; /* Alinha o elemento à esquerda da tela */
+        
+    }
+
+    .close-menu-label::after {
+        content: '☰'; /* Exibe o ícone de "hambúrguer" (três linhas) como conteúdo adicional */
+        position: fixed; /* Fixa o ícone de menu na tela */
+        z-index: 3; /* Garante que o ícone fique acima de outros elementos */
+        top: 2rem; /* Posiciona o ícone no topo da tela */
+        right: 1rem; /* Afasta o ícone da borda direita em 2rem */
+        background-color: black; /* Define o fundo do ícone como preto */
+        color: white; /* Define a cor do ícone como branco */
+        font-size: 3rem; /* Define o tamanho da fonte (ícone) como 3rem */
+        padding: 1rem; /* Adiciona um preenchimento interno ao redor do ícone */
+        line-height: 3rem; /* Define a altura da linha para alinhar verticalmente o ícone */
+        width: 3rem; /* Define a largura do ícone */
+        height: 3rem; /* Define a altura do ícone */
+        text-align: center; /* Centraliza o conteúdo (ícone) horizontalmente */
+        cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre o ícone */
+    }
+
+
+    .close-menu:checked ~ .section-container .nav {
+        display: block; /* Exibe o menu (nav) quando o checkbox close-menu estiver marcado */
+        
+
+    }
+
+
+    .close-menu:checked ~ .close-menu-label::after {
+        display: block; /* Garante que o ícone de fechar seja exibido quando o menu estiver aberto */
+        content: '×'; /* Troca o ícone de "hambúrguer" por um ícone de "fechar" (X) */
+        
+    }
+
+
+    .img-ela {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        max-width: auto;
+        justify-content: center;
+        margin-top: 6rem;
+        
+    }
+    
+    .img-ela img {
+        width: auto;
+        max-height: auto;
+        object-fit: cover; /* Mantém a proporção da imagem */
+        margin-bottom: 1rem;
+        
+    }
+    
+    .img-ela .img-2 {
+        width: 60%; /* Diminui a largura da imagem para 50% */
+        max-height: 70rem; /* Limita a altura máxima da imagem */
+        height: auto; /* Mantém a altura proporcional à largura */
+        object-fit: contain; /* Garante que a imagem seja exibida inteira sem cortes */
+        margin-left: 1rem;
+        position: relative;
+        right: 1rem;
+        
+    }
+
+    .textdoh3{
+        font-size: 1.4rem;
+    }
+
+    
+}
+
+
+
+
+
+
+@media(max-width: 360px){
+    
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin-top: 1rem;
+    }
+
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: rgb(70, 188, 209);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 14rem; /* Fixar a altura da navbar */
+        
+    }
+
+    .main{
+        margin-top: 11.5rem;
+    }
+
+
+
+    .nav {
+        display: none; /* Esta regra sobrescreve a anterior, escondendo o menu (nav) por padrão */
+        
+    }
+
+    .close-menu {
+        position: fixed; /* Fixa o elemento na tela, mantendo sua posição ao rolar a página */
+        z-index: 2; /* Garante que este elemento fique acima de outros */
+        top: 0; /* Posiciona o elemento no topo da página */
+        left: 0; /* Alinha o elemento à esquerda da tela */
+        
+    }
+
+    .close-menu-label::after {
+        content: '☰'; /* Exibe o ícone de "hambúrguer" (três linhas) como conteúdo adicional */
+        position: fixed; /* Fixa o ícone de menu na tela */
+        z-index: 2; /* Garante que o ícone fique acima de outros elementos */
+        top: 2rem; /* Posiciona o ícone no topo da tela */
+        right: 1rem; /* Afasta o ícone da borda direita em 2rem */
+        background-color: black; /* Define o fundo do ícone como preto */
+        color: white; /* Define a cor do ícone como branco */
+        font-size: 3rem; /* Define o tamanho da fonte (ícone) como 3rem */
+        padding: 1rem; /* Adiciona um preenchimento interno ao redor do ícone */
+        line-height: 3rem; /* Define a altura da linha para alinhar verticalmente o ícone */
+        width: 3rem; /* Define a largura do ícone */
+        height: 3rem; /* Define a altura do ícone */
+        text-align: center; /* Centraliza o conteúdo (ícone) horizontalmente */
+        cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre o ícone */
+    }
+
+
+    .close-menu:checked ~ .section-container .nav {
+        display: block; /* Exibe o menu (nav) quando o checkbox close-menu estiver marcado */
+        
+
+    }
+
+
+    .close-menu:checked ~ .close-menu-label::after {
+        display: block; /* Garante que o ícone de fechar seja exibido quando o menu estiver aberto */
+        content: '×'; /* Troca o ícone de "hambúrguer" por um ícone de "fechar" (X) */
+        
+    }
+
+    .especificacao .textdoh3{
+        font-size: 1.2rem;
+    }
+
+    .especificacao h3{
+        font-size: 1.3rem;
+    }
+
+    .text-content2 .textdoh3trabalho{
+        font-size: 1.1rem;
+    
+    }
+    
+    
+    .text-content2 .textdoh3resultado{
+        font-size: 0.9rem;
+    }
+
+    .text-content2 .textdoh3finais{
+        font-size: 0.9rem;
+    }
+    
+
+    
+}
+
+
+
+
+
+.close-menu {
+    display: none; /* Esconde o checkbox de controle (close-menu) */
+}
+
+
+
+
+
+
+
+/*PAGE SEPARAÇÃO*/
+
+
+
+
+.section-page-separacao{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+@keyframes expandToFullScreen {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(30);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.section-page-separacao h1 {
+    width: 100%;
+    font-size: 3.2rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, blueviolet, aqua);
+    color: #fff;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    animation: expandToFullScreen 1.5s ease-in-out;
+    animation-fill-mode: forwards; /* Mantém o estado final da animação */
+    position: relative;
+    z-index: 10; /* Garante que o h1 esteja por cima de outros elementos */
+}
+
+
+.text-one{
+    background-image: url("/assets/img/DALL·E\ 2024-09-23\ 19.08.37\ -\ A\ clean\ and\ bright\ environmental-themed\ background\ image\ featuring\ elements\ of\ nature\ and\ sustainability.\ The\ scene\ includes\ a\ landscape\ with\ lush\ gre.webp");
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+    padding: 2rem;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1rem;
+    object-fit: cover;
+    
+    
+    
+}
+
+
+.section-page-separacao h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-page-separacao h2 img{
+    position: relative;
+    margin-left: 1rem;
+}
+
+
+.text-two{
+    background-image: url("/assets/img/DALL·E\ 2024-09-23\ 19.08.37\ -\ A\ clean\ and\ bright\ environmental-themed\ background\ image\ featuring\ elements\ of\ nature\ and\ sustainability.\ The\ scene\ includes\ a\ landscape\ with\ lush\ gre.webp");
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+    padding: 2rem;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+
+
+@media(max-width:450px){
+    .section-page-separacao h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, blueviolet, aqua);
+        color: #fff;
+        border-radius: 12px;
+        transition: all 0.3s ease-in-out;
+        animation: expandToFullScreen 1.5s ease-in-out;
+        animation-fill-mode: forwards; /* Mantém o estado final da animação */
+        position: relative;
+        z-index: 10; /* Garante que o h1 esteja por cima de outros elementos */
+    }
+
+
+}
+
+
+
+
+
+/*MEU-APP-PAGE*/
+
+
+
+.section-page-app{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.section-page-app h1{
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 5rem;
+}
+
+
+
+.section-page-app button{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+
+
+.text-one-app button a{
+    text-decoration: none;
+}
+
+
+
+
+.text-one-app h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+
+}
+
+.img-app img{
+    margin-top: 3rem;
+    width: 25%;
+    height: auto;
+
+    
+}
+
+.img-app{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+}
+
+
+
+.contentp{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+@media(max-width:600px){
+
+    .img-app img{
+        margin-top: 3rem;
+        width: 33%;
+        height: auto;
+    
+        
+    }
+
+    .section-page-app h1{
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        max-width: 70%;
+
+    }
+
+
+    .img-app{
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .text-one-app h2{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .text-one-app img{
+        position: relative;
+        bottom: 3.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .text-one-app{
+        width: 70%;
+        height: auto;
+    
+    }
+
+    .section-page-app button{
+        margin-left: 4rem;
+
+    }
+
+    .obs{
+        text-align: justify;
+        padding: 2rem;
+
+    }
+    
+    .text-one-app .img-erro{
+        display: flex;
+        position: relative;
+        top: 0.2rem;
+        justify-content: center;
+        right: 0rem;
+        align-items: center;
+    }
+    
+}
+
+
+
+@media(max-width:450px){
+
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 55%;
+        height: auto;
+        display: flex;
+        margin-right: 6rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        
+    
+    }
+
+    .obs{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        color: red;
+        display: flex;
+        margin-left: 4rem;
+
+        
+    }
+    
+    .obs0{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        
+        
+    }
+
+    .section-page-app h1{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        text-align: justify;
+        margin-left: 2rem;
+    }
+
+    .img-erro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        position: relative;
+        left: 4rem;
+    }
+    
+
+    
+}
+
+
+
+@media (min-width: 300) and (max-width: 350px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        font-size: 1.8rem;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .text-one-app .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        padding: 0.5rem;
+        
+
+
+        
+    }
+    
+    .text-one-app .obs0{
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        
+        
+        
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .text-one-app h2{
+        margin: 0;
+    }
+
+    .text-one-app{
+        min-width: 100%;
+    }
+
+
+    .text-one-app .app-h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+
+}
+
+
+
+
+@media(max-width:599px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .text-one-app .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        padding: 0.5rem;
+        
+
+
+        
+    }
+    
+    .text-one-app .obs0{
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        
+        
+        
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .text-one-app h2{
+        margin: 0;
+    }
+
+    .text-one-app{
+        min-width: 100%;
+    }
+
+
+    .text-one-app .app-h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+
+
+    
+}
+
+
+
+@media(max-width:280px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .img-app img{
+        margin-top: 2rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 3rem;
+        
+        
+        
+    }
+
+    .text-one-app h2{
+        font-size: 0.8rem;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        
+        
+    
+    }
+
+    .text-one-app .obs{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        color: red;
+        padding: 0.5rem;
+        
+
+
+        
+    }
+    
+    .text-one-app .obs0{
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        color: red;
+        margin-top: 1rem;
+        
+    }
+    
+    .section-page-app button{
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .section-page-app{
+        display: flex;
+        min-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-page-app h1{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contentp{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        
+        
+        
+        
+    }
+
+    .text-one-app .img-erro{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .text-one-app .img-erro{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-left: -4rem;
+    }
+
+    
+
+    .text-one-app .app-h2{
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    .text-one-app h2{
+        margin: 0;
+    }
+
+    .text-one-app{
+        min-width: 100%;
+    }
+
+
+    .text-one-app .app-h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-ods .ssh1{
+        font-size: 1rem;
+    }
+
+    .section-ods .ssh1{
+        font-size: 1rem;
+
+    }
+}
+
+
+
+    
+
+
+.obs{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: red;
+    padding: 0.5rem;
+}
+
+.obs0{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    color: red;
+    margin-top: 1rem;
+}
+
+.img-erro{
+    display: flex;
+    background-size: cover;
+    width: 60%;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.text-one-app h2 img{
+    position: relative;
+    top:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+    .section-page-separacao h1{
+        font-size: 2.2rem;
+        display: flex;
+
+    }
+
+    .section-page-separacao h2{
+        font-size: 1.6rem;
+        display: flex;
+    }
+}
+
+
+@media(max-width:450px){
+    .section-page-separacao h1{
+        font-size: 1.6rem;
+        display: flex;
+
+    }
+
+    .section-page-separacao h2{
+        font-size: 1.2rem;
+        display: flex;
+    }
+}
+
+
+
+@media(max-width:300px){
+    .section-page-separacao h1{
+        font-size: 1.1rem;
+        display: flex;
+
+    }
+
+    .section-page-separacao h2{
+        font-size: 1.2rem;
+        display: flex;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .section-page-co2 h2 {
+        font-size: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Opcional: centraliza o texto, caso necessário */
+
+    }
+
+    .section-page-co2 h2 img{
+        position: relative;
+        right: 1.5rem;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+@media (max-width: 300px) {
+
+    .section-page-co2 h2 {
+        font-size: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Opcional: centraliza o texto, caso necessário */
+
+    }
+
+
+    .section-page-co2 .sh1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 7rem;
+    }
+
+
+
+    .section-page-co2 h2 img{
+        position: relative;
+        right: 1.5rem;
+    }
+
+    .text-ods .ssh1{
+        font-size: 1rem;
+    }
+
+    .section-ods .ssh1{
+        font-size: 1rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-page-co2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.section-page-co2 h1{
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 9rem;
+}
+
+
+
+.text-one-co2{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+    padding: 2rem;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+
+}
+
+
+.section-page-co2 h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-page-co2 h2 img{
+    margin-left: 1rem;
+}
+
+
+
+
+.text-two-co2{
+    display: flex;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+    padding: 2rem;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-ods{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.section-ods h1{
+    display: flex;
+    font-size: 3rem;
+    background-color: aqua;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    
+}
+
+.header img{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.text-ods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    background-color: aqua;
+    height: 9rem;
+    margin-bottom: 2rem;
+    
+    
+
+}
+
+
+.text-sobre-ods{
+    display: flex;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
